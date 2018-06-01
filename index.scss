@@ -1,0 +1,80 @@
+@import 'node_modules/modern-normalize/modern-normalize';
+
+$main-background: #111;
+$accent: #BEC169;
+$accent2: #FAF694;
+$accent3: #D3A23C;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'VT323', Courier, monospace;
+    font-variant-ligatures: none;
+    background: $main-background;
+}
+
+.console-text {
+    max-width: 100%;
+    font-size: 4.7vw;
+    color: $accent3;
+    padding: 1vw 2vw;
+    text-shadow: 0 0 35px rgba($accent3, 0.9);
+    word-break: break-all;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.crt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    // background-image: url(http://www.piratehearts.com/blog/wp-content/uploads/2014/03/crtsim_ntsc.png);
+    background-size: 10%;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(transparent 80%, rgba(0, 0, 0, .6)),
+        radial-gradient(rgba($accent3, .1), transparent 70%),
+        radial-gradient(rgba(white, .05), transparent 50%);
+}
+
+@keyframes cursor-anim {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    &.idle {
+        animation: cursor-anim 1.5s linear infinite;
+    }
+}
