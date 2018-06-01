@@ -37,7 +37,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div onClick={() => { this.writeLine('adasdasd ad asda sd asd as das d ') }}>
+            <div>
                 <AwesomeConsole text={this.state.lines} finished={this.writingFinished}/>
                 <div className="crt"/>
                 <div className="vignette"/>

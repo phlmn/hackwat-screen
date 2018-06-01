@@ -20,8 +20,9 @@ body {
     font-size: 4.7vw;
     color: $accent3;
     padding: 1vw 2vw;
-    text-shadow: 0 0 35px rgba($accent3, 0.9);
+    text-shadow: 0 0 2vw rgba($accent3, 0.9);
     word-break: break-all;
+    white-space: pre-line;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -35,8 +36,8 @@ body {
     right: 0;
     bottom: 0;
     opacity: .1;
-    // background-image: url(http://www.piratehearts.com/blog/wp-content/uploads/2014/03/crtsim_ntsc.png);
-    background-size: 10%;
+    // background-image: url(http://th07.deviantart.net/fs71/PRE/f/2013/323/9/5/photoshop_scanlines_texture_overlay_by_sinner_pwa-d6uu408.png);
+    background-size: cover;
 }
 
 .vignette {
