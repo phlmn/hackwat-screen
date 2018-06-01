@@ -1,7 +1,7 @@
 import classNames from 'classnames';
+import format from 'date-fns/format';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import format from 'date-fns/format';
 
 class App extends React.Component {
     constructor(props) {
