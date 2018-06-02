@@ -167,12 +167,15 @@ class AwesomeConsole extends React.Component {
     }
 
     render() {
+        const { lines, idle } = this.state;
+        const relevantLines = lines.slice(Math.max(0, lines.length - 50), lines.length);
+
         return (
             <div className="console-text">
-                {this.state.lines.map((line, index) => (
-                    <span key={index}>{line}{(index !== this.state.lines.length - 1) && <br />}</span>
+                {relevantLines.map((line, index) => (
+                    <span key={index}>{line}{(index !== relevantLines.length - 1) && <br />}</span>
                 ))}
-                <Cursor idle={this.state.idle}/>
+                <Cursor idle={idle}/>
             </div>
         );
     }
